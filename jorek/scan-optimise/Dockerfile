@@ -65,3 +65,7 @@ ENV LD_LIBRARY_PATH="/usr/lib64/openmpi/lib/:${LD_LIBRARY_PATH}"
 COPY generate-jorek-input.perl /usr/local/bin/
 COPY my_change_file.perl /usr/local/bin/
 COPY simulator_script_noflags.perl /usr/local/bin/
+RUN chmod a+xr /usr/local/bin/generate-jorek-input.perl && \
+    chmod a+xr /usr/local/bin/my_change_file.perl && \
+    chmod a+xr /usr/local/bin/simulator_script_noflags.perl
+    
