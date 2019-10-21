@@ -17,7 +17,7 @@ prominence create --name dakota-parallelism \
                   --cpus 4 \
                   --nodes 4 \
                   --openmpi \
-                  --artifact https://github.com/alahiff/dakota-examples/raw/master/text-book/dakota-text-book-1.tgz \
+                  --artifact https://github.com/alahiff/dakota-examples/raw/master/text-book/dakota-text-book-2.tgz \
                   --workdir text_book \
                   alahiff/dakota \
                   "dakota -i dakota_pstudy.in"                  
