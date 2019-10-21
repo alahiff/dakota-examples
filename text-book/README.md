@@ -1,5 +1,7 @@
 # Parallel Dakota example
-Single node:
+Example of running Dakota in parallel and having the analysis script launching the application in serial.
+
+## Single node
 ```
 prominence create --name dakota-parallelism \
                   --cpus 6 \
@@ -9,7 +11,7 @@ prominence create --name dakota-parallelism \
                   "mpirun -np 6 dakota -i dakota_pstudy.in"
 ```
 
-Multiple nodes:
+## Multiple nodes
 ```
 
 ```
