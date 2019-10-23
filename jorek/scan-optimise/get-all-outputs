@@ -1,0 +1,24 @@
+import os
+import subprocess
+import sys
+
+cwd = os.getcwd()
+
+cmd = 'prominence list --all --constraint %s' % sys.argv[1]
+process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+output = process.communicate()[0]
+
+for line in output.splitlines():
+    line = line.decode("utf-8")
+    if not line.startswith('ID'):
+        os.chdir(cwd)
+        pieces = line.split()
+        print('Working on job', pieces[0])
+
+        # Create a unique directory for the current job
+        directory_name = 'job_%s' % pieces[1].split('/')[len(pieces[1].split('/'))-1]
+        os.mkdir(directory_name)
+
+        # Inside each directory, download the job's tarball
+        os.chdir(directory_name)
+        os.system('prominence download %s' % pieces[0])
