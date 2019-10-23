@@ -44,3 +44,8 @@ ID      NAME                             CREATED               STATUS    ELAPSED
 When the workflow has completed you will need to add `--completed` to the above command in order to see it, i.e.
 ```
 ```
+
+Once the workflow has completed, the script `get-all-outputs` can be used to download all
+```
+python get-all-outputs thing=...
+```
