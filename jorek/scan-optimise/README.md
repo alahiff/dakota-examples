@@ -41,3 +41,6 @@ $ prominence list workflows
 ID      NAME                             CREATED               STATUS    ELAPSED      PROGRESS
 25313   jorek-sweep-optimise-with-data   2019-10-23 06:19:01   running   0+00:29:32   4/9
 ```
+When the workflow has completed you will need to add `--completed` to the above command in order to see it, i.e.
+```
+```
