@@ -41,8 +41,16 @@ $ prominence list workflows
 ID      NAME                             CREATED               STATUS    ELAPSED      PROGRESS
 25313   jorek-sweep-optimise-with-data   2019-10-23 06:19:01   running   0+00:29:32   4/9
 ```
-When the workflow has completed you will need to add `--completed` to the above command in order to see it, i.e.
+When the workflow has completed it will no longer be visible when you run `prominence list workflows`, i.e.
 ```
+$ prominence list workflows
+ID   NAME   CREATED               STATUS   ELAPSED      PROGRESS
+```
+If you add the `--completed` option you will be able to see the status:
+```
+$ prominence list workflows --completed
+ID      NAME                             CREATED               STATUS      ELAPSED      PROGRESS
+25313   jorek-sweep-optimise-with-data   2019-10-23 06:19:01   completed   0+02:26:03   9/9
 ```
 
 Once the workflow has completed, the script `get-all-outputs` can be used to download all
