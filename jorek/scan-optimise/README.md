@@ -1,9 +1,10 @@
 # JOREK parameter scan + Dakota optimise
 
 ## Submitting the workflow
-To run the full parameter scan with optimisation for each parameter set, run the following:
+The full parameter scan with optimisation for each parameter set can be submitted in the following way:
 ```
-prominence run jorek-sweep-opt-2.json
+$ prominence run jorek-sweep-opt-2.json
+Workflow created with id 25335
 ```
 To check the status, run:
 ```
