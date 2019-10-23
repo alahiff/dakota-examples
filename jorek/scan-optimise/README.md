@@ -56,7 +56,7 @@ ID      NAME                             CREATED               STATUS      ELAPS
 
 Once the workflow has completed, the script `get-all-outputs` can be used to download all
 ```
-python get-all-outputs thing=6C5B8EFA
+python get-all-outputs thing=6C5B8EFB
 ```
 This script will create a unique directory for each job and download the output tarball from ECHO. The `thing=6C5B8EFB` is a constraint on the jobs, i.e. it will find all jobs which have a label `thing` with value `6C5B8EFB`. If you look at the file `jorek-sweep-opt-2.json` you can see this defined. Note that the label is arbitrary, but the value should be changed for each workflow you run. *This is a workaround which will be fixed later - eventually it will be simpler, e.g. specify the workflow id instead*.
 
