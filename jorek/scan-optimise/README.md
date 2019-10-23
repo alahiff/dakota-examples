@@ -40,7 +40,7 @@ The status can be checked by running `prominence list workflows`:
 ```
 $ prominence list workflows
 ID      NAME                             CREATED               STATUS    ELAPSED      PROGRESS
-25313   jorek-sweep-optimise-with-data   2019-10-23 06:19:01   running   0+00:29:32   4/9
+25335   jorek-sweep-optimise-with-data   2019-10-23 10:42:09   running   0+00:42:28   5/9
 ```
 When the workflow has completed it will no longer be visible when you run `prominence list workflows`, i.e.
 ```
