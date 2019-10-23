@@ -10,21 +10,21 @@ To check the status, run:
 ```
 $ prominence list workflows
 ID      NAME                             CREATED               STATUS    ELAPSED      PROGRESS
-25313   jorek-sweep-optimise-with-data   2019-10-23 06:19:01   running   0+00:01:21   0/9  
+25335   jorek-sweep-optimise-with-data   2019-10-23 10:42:09   running   0+00:02:49   0/9
 ```
 The following command can be run to see the individual jobs which have been created:
 ```
 $ prominence list
 ID      NAME                                                     CREATED               STATUS      ELAPSED      IMAGE               CMD                                                               
-25314   jorek-sweep-optimise-with-data/dakota-jorek-optimise/0   2019-10-23 06:19:05   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
-25315   jorek-sweep-optimise-with-data/dakota-jorek-optimise/1   2019-10-23 06:19:05   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
-25316   jorek-sweep-optimise-with-data/dakota-jorek-optimise/2   2019-10-23 06:19:07   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
-25317   jorek-sweep-optimise-with-data/dakota-jorek-optimise/3   2019-10-23 06:19:07   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
-25318   jorek-sweep-optimise-with-data/dakota-jorek-optimise/4   2019-10-23 06:19:09   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
-25319   jorek-sweep-optimise-with-data/dakota-jorek-optimise/5   2019-10-23 06:19:09   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
-25320   jorek-sweep-optimise-with-data/dakota-jorek-optimise/6   2019-10-23 06:19:11   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
-25321   jorek-sweep-optimise-with-data/dakota-jorek-optimise/7   2019-10-23 06:19:12   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
-25322   jorek-sweep-optimise-with-data/dakota-jorek-optimise/8   2019-10-23 06:19:14   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
+25336   jorek-sweep-optimise-with-data/dakota-jorek-optimise/0   2019-10-23 10:42:14   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
+25337   jorek-sweep-optimise-with-data/dakota-jorek-optimise/1   2019-10-23 10:42:14   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
+25338   jorek-sweep-optimise-with-data/dakota-jorek-optimise/2   2019-10-23 10:42:16   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
+25339   jorek-sweep-optimise-with-data/dakota-jorek-optimise/3   2019-10-23 10:42:16   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
+25340   jorek-sweep-optimise-with-data/dakota-jorek-optimise/4   2019-10-23 10:42:18   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
+25341   jorek-sweep-optimise-with-data/dakota-jorek-optimise/5   2019-10-23 10:42:18   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
+25344   jorek-sweep-optimise-with-data/dakota-jorek-optimise/6   2019-10-23 10:42:20   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
+25345   jorek-sweep-optimise-with-data/dakota-jorek-optimise/7   2019-10-23 10:42:20   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
+25348   jorek-sweep-optimise-with-data/dakota-jorek-optimise/8   2019-10-23 10:42:22   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
 ```
 Note that currently, by default, only up to 20 idle jobs will be created at a time. Once the jobs start running more will be created.
 
