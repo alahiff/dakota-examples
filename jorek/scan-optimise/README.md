@@ -1,5 +1,6 @@
 # JOREK parameter scan + Dakota optimise
 
+## Submitting the workflow
 To run the full parameter scan with optimisation for each parameter set, run the following:
 ```
 prominence run jorek-sweep-opt-2.json
@@ -25,9 +26,11 @@ ID      NAME                                                     CREATED        
 25322   jorek-sweep-optimise-with-data/dakota-jorek-optimise/8   2019-10-23 06:19:14   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
 ```
 
+## Downloading the output files and work directories
 Each job will create a tarball containing:
 * dakota_jorek.out
 * dakota_jorek.dat
 * all the work directories created by Dakota
 
 which will be automatically uploaded to ECHO as each job completed.
+
