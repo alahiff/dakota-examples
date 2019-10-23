@@ -49,3 +49,4 @@ Once the workflow has completed, the script `get-all-outputs` can be used to dow
 ```
 python get-all-outputs thing=...
 ```
+This script will create a unique directory for each job and download the output tarball from ECHO.
