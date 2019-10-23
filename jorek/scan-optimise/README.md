@@ -25,7 +25,7 @@ ID      NAME                                                     CREATED        
 25321   jorek-sweep-optimise-with-data/dakota-jorek-optimise/7   2019-10-23 06:19:12   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
 25322   jorek-sweep-optimise-with-data/dakota-jorek-optimise/8   2019-10-23 06:19:14   deploying                jorek-dakota.simg   /usr/local/bin/generate-jorek-input.perl $x1 $x2 injt60sa.template
 ```
-Note that currently, by default, only up to 20 idle jobs will be created at a hime. Once the jobs start running more will be created.
+Note that currently, by default, only up to 20 idle jobs will be created at a time. Once the jobs start running more will be created.
 
 ## Downloading the output files and work directories
 Each job will create a tarball containing:
